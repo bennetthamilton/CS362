@@ -1,0 +1,3 @@
+[submodule "cs362_coad/cs362-coad-resources"]
+	path = cs362_coad/cs362-coad-resources
+	url = https://github.com/bennetthamilton/CS362/tree/main/cs362_coad
