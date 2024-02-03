@@ -20,6 +20,7 @@ class Sky
   def self.instance_count
     @@instance_count
   end
+  
 end
 
 
