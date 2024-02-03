@@ -1,5 +1,11 @@
-class Sky
+# Bennett Hamilton
+# This is a simple example of a singleton class. The Sky class is a singleton
 
+require 'singleton'
+
+# ref: https://www.rubyguides.com/2018/05/singleton-pattern-in-ruby/
+class Sky
+  include Singleton
   @@instance_count = 0
 
   def initialize
@@ -10,17 +16,21 @@ class Sky
   def to_s
     "I am sky object #{@id} of #{@@instance_count} total instances."
   end
+
+  def self.instance_count
+    @@instance_count
+  end
 end
 
 
-sky = Sky.new
+sky = Sky.instance
 puts sky
 
-another_sky = Sky.new
+another_sky = Sky.instance
 puts another_sky
 
-blood_red_sky = Sky.new
+blood_red_sky = Sky.instance
 puts blood_red_sky
 
-pink_sky = Sky.new
+pink_sky = Sky.instance
 puts pink_sky
