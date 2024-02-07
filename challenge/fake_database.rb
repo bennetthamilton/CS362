@@ -3,7 +3,7 @@ class FakeDatabase
   attr_accessor :records
 
   def initialize
-    :records = []
+    @records = []
   end
 
   def record_count
