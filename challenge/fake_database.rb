@@ -1,6 +1,6 @@
 
 class FakeDatabase
-  :attr_accessor :records
+  attr_accessor :records
 
   def initialize
     :records = []
