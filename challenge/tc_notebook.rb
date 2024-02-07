@@ -1,4 +1,5 @@
 require_relative "notebook.rb"
+require_relative "fake_database.rb"
 require "test/unit"
 
 class TestNotebook < Test::Unit::TestCase
