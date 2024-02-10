@@ -36,6 +36,8 @@ class StationObserver
 end
 
 weather_station = WeatherStation.new
-# TODO: Add a new observer to the weather station
+station_observer = StationObserver.new(weather_station)
 
 weather_station.temperature = 72
+weather_station.temperature = 68
+weather_station.temperature = 75
