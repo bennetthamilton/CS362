@@ -1,5 +1,5 @@
 #! /usr/bin/env ruby
-# YOUR NAME
+# Bennett Hamilton
 # Exercise 6: Decorator Pattern
 
 # Do not modify this class. Pretend it is from a library that is "closed."
