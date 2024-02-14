@@ -24,7 +24,6 @@ class TestKitchenSink < Test::Unit::TestCase
   def test_triangle_area
     k = FakeKitchenSink.new
     k.triangle_area
-    expected = 
     assert_equal(k.output_str, "The area is 6.0")
   end
 
