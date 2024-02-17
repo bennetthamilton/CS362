@@ -34,12 +34,22 @@ service.execute
 # TODO Exercise, using the decorator pattern. Can you add new behavior without
 # changing the HyperCar class or the CarService class?
 
+class CarDecorator
+  
+  def initialize(car)
+    @car = car
+  end
 
+  def go
+    puts "awooga!"
+    @car.go
+    puts "waka waka waka!"
+  end
+end
 
-
-
-
-
+decorated_hyper_car = CarDecorator.new(hyper_car)
+puts "\n"
+second_service = CarService.new(decorated_hyper_car)
 second_service.execute
 # This `execute` call should print:
 # > awooga!
