@@ -1,45 +1,42 @@
-# YOUR NAME
+# Bennett Hamilton
 # CS 362 Exercise 8: Intermediate Ruby
 
-def noun
-  2.times { puts "Noun: Cadillac" }
+class WordInterface
+  def initialize
+    @command_names = ["noun", "verb", "adjective", "adverb", "gerund"]
+  end
+
+  def get_command
+    puts "Enter a command: " + @command_names.join(' ')
+    selection = gets.chomp
+    if @command_names.include?(selection)
+      send(selection)
+    else
+      puts "Invalid command"
+    end
+  end
+
+  def noun
+    2.times { puts "Noun: Cadillac" }
+  end
+
+  def verb
+    2.times { puts "Verb: Accelerate" }
+  end
+
+  def adjective
+    3.times { puts "Adjective: Dark" }
+  end
+
+  def adverb
+    2.times { puts "Adverb: Confidently" }
+  end
+
+  def gerund
+    4.times { puts "Gerund: Grooving" }
+  end
 end
 
-def verb
-  2.times { puts "Verb: Accelerate" }
-end
-
-def adjective
-  3.times { puts "Adjective: Dark" }
-end
-
-def adverb
-  2.times { puts "Adverb: Confidently" }
-end
-
-def gerund
-  4.times { puts "Gerund: Grooving" }
-end
-
-command_names = ["noun", "verb", "adjective", "adverb", "gerund"]
-
-puts "Enter a command: " +
-                 command_names[0] + ' ' +
-                 command_names[1] + ' ' +
-                 command_names[2] + ' ' +
-                 command_names[3] + ' ' +
-                 command_names[4]
-selection = gets.chomp
-
-if selection == command_names[0]
-  noun
-elsif selection == command_names[1]
-  verb
-elsif selection == command_names[2]
-  adjective
-elsif selection == command_names[3]
-  adverb
-elsif selection == command_names[4]
-  gerund
-end
+word_interface = WordInterface.new
+word_interface.get_command
 
