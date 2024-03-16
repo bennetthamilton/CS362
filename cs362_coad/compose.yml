@@ -8,6 +8,7 @@ services:
     volumes:
       - ubuntu_lunar_home:/home/user
       - ./cs362-coad-resources:/home/user/cs362-coad-resources
+      - ./cs362-cold-beverages-Wi2024:/home/user/cs362-cold-beverages-Wi2024
 
     stdin_open: true
     tty: true

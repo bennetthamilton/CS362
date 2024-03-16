@@ -4,3 +4,6 @@
 [submodule "cs362-cold-beverages-Wi2024"]
 	path = cs362-cold-beverages-Wi2024
 	url = https://github.com/bennetthamilton/cs362-cold-beverages-Wi2024.git
+[submodule "cs362_coad/cs362-cold-beverages-Wi2024"]
+	path = cs362_coad/cs362-cold-beverages-Wi2024
+	url = https://github.com/bennetthamilton/cs362-cold-beverages-Wi2024.git
